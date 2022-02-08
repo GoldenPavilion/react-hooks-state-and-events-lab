@@ -7,6 +7,8 @@ function ShoppingList({ items }) {
   const itemsToDisplay = items.filter((item) => {
     if(filterBy === "All"){
       return true;
+    } else {
+      return item.category === filterBy;
     }
   })
   
