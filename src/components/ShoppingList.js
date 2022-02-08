@@ -5,6 +5,12 @@ function ShoppingList({ items }) {
   const [itemsList, setItemsList] = useState(items);
   const [filterBy, setFilterBy] = useState("All");
 
+  const itemsToDisplay = itemsList.filter((item) => {
+    if(filterBy === "All"){
+      return true;
+    }
+  })
+  
   function handleFilterChange(event) {
     setFilterBy(event.target.value);
   }
