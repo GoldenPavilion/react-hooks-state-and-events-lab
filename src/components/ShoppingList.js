@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Item from "./Item";
 
 function ShoppingList({ items }) {
+  const [itemsList, setItemsList] = useState(items)
   return (
     <div className="ShoppingList">
       <div className="Filter">
