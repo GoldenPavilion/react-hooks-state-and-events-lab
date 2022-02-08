@@ -7,6 +7,8 @@ function Item({ name, category }) {
     setInCart((inCart) => !inCart);
   }
 
+  const itemClass = inCart ? "in-cart" : "";
+
   return (
     <li className="">
       <span>{name}</span>
