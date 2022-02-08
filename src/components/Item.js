@@ -2,6 +2,11 @@ import React,{useState} from "react";
 
 function Item({ name, category }) {
   const [inCart, setInCart] = useState(false);
+
+  function handleClick() {
+    setInCart((inCart) => !inCart);
+  }
+
   return (
     <li className="">
       <span>{name}</span>
