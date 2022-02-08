@@ -5,6 +5,10 @@ function ShoppingList({ items }) {
   const [itemsList, setItemsList] = useState(items);
   const [filterBy, setFilterBy] = useState("All");
 
+  function handleFilterChange(event) {
+    setFilterBy(event.target.value);
+  }
+
 
   return (
     <div className="ShoppingList">
