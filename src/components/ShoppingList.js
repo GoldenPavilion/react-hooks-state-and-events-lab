@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import Item from "./Item";
 
 function ShoppingList({ items }) {
-  const [itemsList, setItemsList] = useState(items);
   const [filterBy, setFilterBy] = useState("All");
 
-  const itemsToDisplay = itemsList.filter((item) => {
+  const itemsToDisplay = items.filter((item) => {
     if(filterBy === "All"){
       return true;
     }
