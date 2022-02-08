@@ -7,6 +7,10 @@ function App() {
   // this will be used for the Dark Mode Toggle feature
   const [isDark, setIsDark] = useState(false);
 
+  function handleClick() {
+    setIsDark((isDark) => !isDark);
+  }
+  
   const appClass = false ? "App dark" : "App light"
 
   return (
