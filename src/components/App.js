@@ -11,7 +11,7 @@ function App() {
     setIsDark((isDark) => !isDark);
   }
   
-  const appClass = false ? "App dark" : "App light"
+  const appClass = isDark ? "App dark" : "App light"
 
   return (
     <div className={appClass}>
